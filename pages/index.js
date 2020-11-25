@@ -23,8 +23,7 @@ export default function Home() {
   const removeItem = (e) => {
     let name = e.target.getAttribute("name");
     setList((oldArray) => oldArray.filter((item, index) => {
-      console.log(index)
-      return index != name
+      return index != name;
     }))
   }
 
